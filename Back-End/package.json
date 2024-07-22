@@ -1,0 +1,21 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.44.3",
+    "dotenv": "^16.4.5",
+    "mqtt": "^5.8.0",
+    "node-modules": "^1.0.1"
+  },
+  "devDependencies": {
+    "supabase": "^1.183.5"
+  }
+}
