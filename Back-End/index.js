@@ -18,7 +18,7 @@ const supabase = createClient(supabaseUrl, supabaseKey);
 const mqttOptions = {
   username: mqttUsername,
   password: mqttPassword,
-  rejectUnauthorized: false, // Use with caution in production!
+  rejectUnauthorized: false,
 };
 
 // Construct the MQTT connection URL
@@ -39,7 +39,7 @@ const topicAbbreviations = {
 
 // MQTT Event Handlers
 client.on('connect', () => {
-  // Subscribe using full topic names with correct wildcards
+  // Subscribe using full topic
   client.subscribe('Mixing/+', (err) => { 
     if (err) { console.error('Error subscribing to Mixing topics:', err); } 
   });
